@@ -1,9 +1,17 @@
 import Contact from "../Contact/Contact.jsx";
 
-const ContactList = () => {
+const ContactList = ({ contacts }) => {
   return (
     <ul>
-      <Contact />
+      {contacts.map((contact) => {
+        return (
+          <Contact
+            key={contact.id}
+            name={contact.name}
+            number={contact.number}
+          />
+        );
+      })}
     </ul>
   );
 };

@@ -1,8 +1,9 @@
-const Contact = () => {
+const Contact = (contact) => {
   return (
     <li>
-      <p> name: Sveta</p>
-      <p> tel: 343-55-55</p>
+      <p> name: {contact.name}</p>
+      <p> tel:{contact.number} </p>
+      <button type="button">Delete</button>
     </li>
   );
 };
