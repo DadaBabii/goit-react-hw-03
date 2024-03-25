@@ -31,13 +31,18 @@ body {
 }
 
 h1 {
+  margin-left: 20px;
   font-size: 3.2em;
   line-height: 1.1;
 }
 
+ul {
+  list-style: none;
+}
+
 button {
   border-radius: 8px;
-  border: 1px solid transparent;
+  border: 1px solid grey;
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
@@ -65,4 +70,11 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+.container {
+
+  display: block;
+  margin-left: 30px;
+
 }

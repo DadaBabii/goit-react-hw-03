@@ -1,9 +1,9 @@
-// import { useState } from "react";
+import css from "./SearchBox.module.css";
 
 const SearchBox = ({ value, onChange }) => {
   return (
     <>
-      <h2>Find contacts by name</h2>
+      <h2 className={css.header}>Find contacts by name</h2>
 
       <input type="text" value={value} onChange={onChange} />
     </>
